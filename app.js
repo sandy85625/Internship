@@ -11,7 +11,8 @@ app.use(expressLayouts);
 app.use("/assets", express.static('./assets'));
 
 // --------- ROUTES -----------//
-app.use('/auth',require('./routers/authentication'));
+app.use('/auth', require('./routers/authentication'));
+app.use('/', require('./routers/user'));
 
 app.listen(port, () => {
   console.log(`Click this link to start : http://localhost:${port}`)
