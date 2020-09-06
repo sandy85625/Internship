@@ -1,17 +1,18 @@
 // ------- Importing modules -------//
-const express = require('express');
-const path = require('path');
-const ejs = require('ejs');
-const expressLayouts = require('express-ejs-layouts');
-const cookieParser = require('cookie-parser')
-const session = require('express-session');
-const passport = require('passport');
-const passportLocals = require('./config/passport-local')
-const MongoStore = require('connect-mongo')(session);
-const db = require('./config/mongoose')
-const app = express()
+const express               = require('express');
+const path                  = require('path');
+const ejs                   = require('ejs');
+const expressLayouts        = require('express-ejs-layouts');
+const cookieParser          = require('cookie-parser')
+const session               = require('express-session');
+const passport              = require('passport');
+const passportLocals        = require('./config/passport-local');
+const FacebookStrategy      = require('./config/passport-facebook');
+const MongoStore            = require('connect-mongo')(session);
+const db                    = require('./config/mongoose')
+const app                   = express()
 
-const port = 5000
+const port = 5429
 
 // --------- Parsers --------- //
 app.use(express.urlencoded());
