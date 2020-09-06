@@ -15,4 +15,5 @@ router.post('/login',
             authControllers.login
 )
 
+router.get('/signout',authControllers.logout)
 module.exports = router;

@@ -41,3 +41,9 @@ module.exports.create = function(req, res) {
 module.exports.login = function(req, res){
     return res.redirect('/user')
 }
+
+//--------- Logout Handel --------//
+module.exports.logout = function(req, res){
+    req.logout();
+    return res.redirect("/")
+}
