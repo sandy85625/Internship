@@ -12,4 +12,10 @@ routers.get('/signin',function(req,res){
 routers.get('/signup',function(req,res){
     return res.render('signup');
 })
+
+routers.get('/user',function(req,res){
+    return res.render('user');
+})
+
+
 module.exports = routers;
