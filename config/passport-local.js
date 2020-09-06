@@ -5,7 +5,7 @@ const User = require('../models/User');
 //------- Confrigation of Passport -----//
 passport.use(new LocalStrategy({
     usernameField: 'email',
-    passwordField: 'password'
+    // passwordField: 'password'
   },
     function(email, password, done) {
 
@@ -34,6 +34,30 @@ passport.serializeUser(function(user, done) {
   
 passport.deserializeUser(function(id, done) {
     User.findById(id, function(err, user) {
-      done(err, user);
+      if(err){
+        console.error('ERROR : Passport 04 User not found');
+        return done(err);
+      }
+      return done(null, user);
     });
 });
+
+
+//-------- Checking Authentication --------//
+passport.checkAuthentication = function(req, res, next) {
+  console.log('check Authentication');
+  if(req.isAuthenticated()){
+    return next();
+  }
+  return res.redirect('/');
+}
+
+//--------- Set Authentication to locals -------//
+passport.setAuthenticationUser = function(req, res, next) {
+  if(req.isAuthenticated()){
+    res.locals.user = req.user;
+  }
+  return next();
+}
+
+module.exports = passport;
