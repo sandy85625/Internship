@@ -1,0 +1,12 @@
+
+<a href="/auth/signout">Sign out</a>
+
+<h1>Reset your password</h1>
+
+<div>
+    <form action="/auth/reset/<%= locals.user.id %> " method="post">
+        <input type="password" name="current_password" placeholder="Enter current password" id="" required>
+        <input type="password" name="password" id="" placeholder="Enter New Password" id="" required>
+        <input type="password" name="repassword" placeholder="Confirm Password" id="" required>
+    </form>
+</div>

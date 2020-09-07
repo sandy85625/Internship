@@ -30,5 +30,9 @@ routers.get('/user', passport.checkAuthentication ,function(req,res){
     return res.render('user');
 })
 
+//view for user
+routers.get('/reset', passport.checkAuthentication ,function(req,res){
+    return res.render('reset');
+})
 
 module.exports = routers;
