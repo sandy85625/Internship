@@ -1,7 +1,7 @@
 const keys = require('./keys');
 //------- Connecting to MongoDB -----------//
 const mongoose = require('mongoose');
-mongoose.connect(keys.mongodb , {useNewUrlParser: true ,useUnifiedTopology: true});
+mongoose.connect(keys.MONGO , {useNewUrlParser: true ,useUnifiedTopology: true});
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
