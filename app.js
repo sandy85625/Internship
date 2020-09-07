@@ -8,8 +8,10 @@ const session               = require('express-session');
 const passport              = require('passport');
 const passportLocals        = require('./config/passport-local');
 const FacebookStrategy      = require('./config/passport-facebook');
+const GoogleStrategy        = require('./config/passport-google')
 const MongoStore            = require('connect-mongo')(session);
 const db                    = require('./config/mongoose')
+const keys                  = require('./config/keys')
 const app                   = express()
 
 const port = 5429
@@ -26,7 +28,7 @@ app.use("/assets", express.static('./assets'));
 // ---------Session and Passport ---------//
 app.use(session({ 		
   name : 'user',
-  secret: 'thats My Secret',
+  secret: keys.SECRET_KEY,
   resave: false,
   saveUninitialized: false,
   cookie: { maxAge: 1000 *60 * 100},

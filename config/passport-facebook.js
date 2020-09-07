@@ -8,15 +8,16 @@ const crypto = require('crypto')
 passport.use(new FacebookStrategy({
     clientID: keys.FACEBOOK_APP_ID,
     clientSecret: keys.FACEBOOK_APP_SECRET,
-    callbackURL: "http://localhost:5429/auth/facebook/callback",
+    callbackURL: keys.FACEBOOK_CALLBACK_URL,
+
     passReqToCallback: true,
     profileFields: ['id', 'emails', 'name']
   },
-  function (accessToken, refreshToken, profile, cb) {
+  function (accessToken, refreshToken, profile, done) {
 
-    User.findOrCreate({
+    User.findOne({
       email: profile.emails[0].value
-    }, function (err, user) {
+    }).exec( function (err, user) {
       if (err) {
         return done(err);
       }

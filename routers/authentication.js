@@ -20,7 +20,9 @@ router.get('/signout', authControllers.logout)
 
 
 // ------- facebook Authentication -------//
-router.get('/facebook', passport.authenticate('facebook',{ scope : [ 'email'] }));
+router.get('/facebook', passport.authenticate('facebook', {
+        scope: ['email']
+}));
 
 router.get('/facebook/callback', passport.authenticate('facebook', {
         failureRedirect: '/login'
@@ -28,6 +30,11 @@ router.get('/facebook/callback', passport.authenticate('facebook', {
 
 
 // -------- Google Authentication ---------//
-
+router.get('/google', passport.authenticate('google', {
+        scope: ['profile', 'email']
+}))
+router.get('/google/callback', passport.authenticate('google', {
+        failureRedirect: '/login'
+}), authControllers.login);
 
 module.exports = router;
