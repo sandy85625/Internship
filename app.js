@@ -6,6 +6,7 @@ const expressLayouts        = require('express-ejs-layouts');
 const cookieParser          = require('cookie-parser')
 const session               = require('express-session');
 const passport              = require('passport');
+const sassMiddleware        = require('node-sass-middleware');
 const passportLocals        = require('./config/passport-local');
 const FacebookStrategy      = require('./config/passport-facebook');
 const GoogleStrategy        = require('./config/passport-google')
@@ -20,10 +21,19 @@ const port = 5429
 app.use(express.urlencoded());
 app.use(cookieParser())
 
+// ---------SCSS------------//
+app.use(sassMiddleware({
+  src: path.join(__dirname, './assets/scss'),
+  dest: path.join(__dirname, './assets/css'),
+  debug: false,
+  outputStyle: 'expanded',
+  prefix:  '/css' 
+}));
+
 //----------- EJS Confrigation -----------//
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
-// app.use("/assets", express.static('./assets'));
+app.use("/assets", express.static('./assets'));
 
 // ---------Session and Passport ---------//
 app.use(session({ 		
