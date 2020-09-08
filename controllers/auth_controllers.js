@@ -47,3 +47,27 @@ module.exports.logout = function(req, res){
     req.logout();
     return res.redirect("/")
 }
+
+//--------- Reset Password Handel --------//
+module.exports.resetPassword = function(req,res){
+    const { password , repassword } = req.body;
+    const id = req.params.id;
+
+    if(!password || !repassword){
+        res.redirect(`/auth/reset/${id}`);
+    }
+
+    if (password !== repassword) {
+        res.redirect(`/auth/reset/${id}`);
+    }
+
+    else {
+        User.findByIdAndUpdate({_id : id},{password},function(err,result){
+            if(err){
+                console.error('ERROR: Password Reset failed');
+            }else{
+                res.redirect('/user');
+            }
+        })
+    }
+}
