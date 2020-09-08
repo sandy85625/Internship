@@ -23,7 +23,7 @@ app.use(cookieParser())
 //----------- EJS Confrigation -----------//
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
-app.use("/assets", express.static('./assets'));
+// app.use("/assets", express.static('./assets'));
 
 // ---------Session and Passport ---------//
 app.use(session({ 		

@@ -17,7 +17,7 @@ passport.use(new FacebookStrategy({
 
     User.findOne({
       email: profile.emails[0].value
-    }).exec( function (err, user) {
+    }).exec(function (err, user) {
       if (err) {
         return done(err);
       }
@@ -29,7 +29,7 @@ passport.use(new FacebookStrategy({
         User.create({
             name: profile.displayName,
             email: profile.emails[0].value,
-            facebookId : profile.id,
+            facebookId: profile.id,
             password: crypto.randomBytes(20).toString('hex')
           }),
           function (err, user) {
