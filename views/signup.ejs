@@ -1,40 +1,35 @@
+
+
 <h1>Register yourself</h1>
 
-<div class="contanier">
-    <div class="row-10">
-        <form action="/auth/signup" method="post" class="form-group">
-            <div class="form-group" >
-                <small class="form-text text-muted"> Use Your Email Address To Register</small>
-                <input type="text" name="name" id="" placeholder="Enter your first name" required>
-            </div>
-            <div class="form-group">
-                <input type="text" name="email" id="" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <input type="password" name="password" id="" placeholder="Enter a password" required>
-            </div>
-            <div class="from-group">
-                <input type="password" name="repassword" id="" placeholder="Renter your password" required>
-            </div>
-            <button type="submit" class="btn btn-light"> Register </button>
-        </form>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <a href="/auth/facebook" class="btn btn-primary" >
-            <i class="fab fa-facebook"></i>
-            Sign Up Using Facebook
-        </a>
-    </div>
-</div>
+<form action="/auth/signup" method="post" class="form-group">
+    <div class="form-group" >
+        <small class="form-text text-muted"> Use Your Email Address To Register</small>
+        <input type="text" name="name" id="" placeholder="Enter your first name" required><br>
+        <br>
 
-<div class="container">
-    <div class="row">
-        <a href="/auth/google" class="btn btn-light"> 
-            <i class="fab fa-google"></i>
-            Sign Up Using Google
-        </a>
+        <input type="text" name="email" id="" placeholder="Enter your email" required>
+        <br><br>
+        <input type="password" name="password" id="" placeholder="Enter a password" required>
+        <br><br>
+        <input type="password" name="repassword" id="" placeholder="Renter your password" required>
     </div>
-</div>
+    <button type="submit" class="btn btn-in btn-dark btn-lg"> Register </button>
+</form>
+
+
+
+<a href="/auth/facebook" class="btn btn-primary btn-lg btn-social" >
+    <i class="fab fa-facebook"></i>
+    Sign Up Using Facebook
+</a>
+
+<br>
+
+<a href="/auth/google" class="btn btn-dark btn-lg btn-social"> 
+    <i class="fab fa-google"></i>
+    Sign Up Using Google
+</a>
+
+<a href="/signin" > Already have an account <i class="fas fa-arrow-right"></i> </a>
