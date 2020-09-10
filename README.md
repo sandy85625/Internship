@@ -44,10 +44,10 @@
 `npm install`
 
 #### Configration og credentials
-> Make a file name key.js and put the following credentials <br>
+>Make a file name key.js and put the following credentials <br>
     module.exports = {
         // for Application
-        MONGO: '-',           //mongoDB connection url
+       MONGO: '-',           //mongoDB connection url
         SECRET_KEY: '-',      // any secret key to encrypt
 
         // facebook credentials 
