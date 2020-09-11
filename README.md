@@ -43,7 +43,7 @@
 
 `npm install`
 
-#### Configration og credentials
+#### Configration of credentials
 Make a file name key.js and put the following credentials <br>
 ```
     module.exports = {
