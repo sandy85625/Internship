@@ -25,7 +25,7 @@ app.use(cookieParser())
 app.use(sassMiddleware({
   src: path.join(__dirname, './assets/scss'),
   dest: path.join(__dirname, './assets/css'),
-  debug: true,
+  debug: false,
   outputStyle: 'expanded',
   prefix:  '/css' 
 }));
