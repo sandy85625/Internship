@@ -1,0 +1,18 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 150px;
+    
+
+}
+.logo-name{
+    margin-left: 60px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.nav-link{
+    text-align: center;
+    font-weight: bold;
+    line-height: 56px;
+}
