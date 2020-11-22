@@ -1,0 +1,27 @@
+{
+  "name": "zstream",
+  "version": "1.0.0",
+  "description": "mock frontend clone",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaysadhasivank/Internship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaysadhasivank/Internship/issues"
+  },
+  "homepage": "https://github.com/ajaysadhasivank/Internship#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.6.1",
+    "popper.js": "^1.16.1",
+    "tether": "^1.4.7"
+  }
+}
