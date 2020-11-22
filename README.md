@@ -11,6 +11,13 @@ Tools used :
 3.  Docz(For documenting React Components)
 
 And I have used the League of Legends Trailer clip as the background Video The clone is definitely the byproduct of my zeal towards minimalism and at the same time obeys notions of criteria given.
+# How it Looks!
+
+![](Extra/Gif1.gif)
+
+![](Extra/Gif2.gif)
+
+
 
 # Peek into File system
 
