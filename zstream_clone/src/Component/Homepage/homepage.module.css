@@ -1,0 +1,246 @@
+.navSpace {
+  width: 100vw;
+  height: 9rem;
+  background-color: grey;
+}
+
+.div1 {
+  width: calc(100vw - 18rem);
+  height: calc(100vh - 7rem);
+  background-image: url('./../../Images/img1.png');
+  background-size: contain;
+  padding-top: 7rem;
+  font-size: 22px;
+  font-weight: 500;
+  padding-left: 18rem;
+}
+.head1 {
+  font-size: 70px;
+  font-weight: 1000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 8rem;
+}
+
+.explore {
+  padding: 1.2rem 3rem 1.2rem 3rem;
+  color: black;
+  background-color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: solid black;
+  margin: 3rem;
+}
+
+.explore:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.6s;
+}
+
+.div2 {
+  margin-top: 5rem;
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 14rem;
+  width: calc(100vw - 14rem);
+  /* height: calc(100vh ); */
+  margin-bottom: 6rem;
+}
+
+.featured {
+  margin: 6rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.video {
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+.aurora_video {
+  display: flex;
+  margin-left: 6rem;
+  background-color: rgba(223, 221, 221, 0.863);
+  border-radius: 2rem;
+  width: 55rem;
+  /* margin-bottom: 16rem; */
+}
+
+.aurora {
+  margin-top: 1rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.p {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.learnMore {
+  padding: 0.5rem 5rem 0.5rem 5rem;
+  border-radius: 2rem;
+  background-color: white;
+  color: black;
+  border: solid black;
+  margin-left: 1rem;
+}
+
+.learnMore:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.6s;
+}
+
+.div3 {
+  background-color: rgba(206, 201, 201, 0.836);
+  width: 100vw;
+  padding-bottom: 6rem;
+}
+
+.div3_1 {
+  font-weight: 600;
+  font-size: 35px;
+  padding: 5rem;
+  border: inset black;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  text-align: center;
+}
+
+.div4 {
+  width: 100vw;
+  background-color: rgb(233, 231, 231);
+}
+
+.gamelibraries {
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+}
+
+.lib {
+  width: 17rem;
+  height: 30rem;
+  background-color: white;
+  margin: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.imgs {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 2rem;
+  border: solid white 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imgBack1 {
+  background-image: url('./../../Images/img3.png');
+  border-radius: 1rem;
+  margin: 1rem;
+  height: 15rem;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.imgBack2 {
+  background-image: url('./../../Images/img4.png');
+  border-radius: 1rem;
+  margin: 1rem;
+  height: 15rem;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.imgBack3 {
+  background-image: url('./../../Images/img5.png');
+  border-radius: 1rem;
+  margin: 1rem;
+  height: 15rem;
+  background-size: contain;
+  box-sizing: border-box;
+}
+
+.play {
+  color: black;
+  background-color: white;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 2rem;
+  border: solid black;
+  margin-top: 2rem;
+}
+
+.play:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.6s;
+}
+
+.div5 {
+  margin: 10rem;
+  margin-left: 30rem;
+  /* height: calc(130vh); */
+}
+
+.about {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.aboutUs {
+  font-size: 25px;
+  margin-top: 2rem;
+  width: 35rem;
+  margin-bottom: 3rem;
+}
+
+.excited {
+  margin-top: 10rem;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.div6{
+  background-color: rgb(14, 13, 26);
+  width: 100vw;
+  height: 80vh;
+  
+}
+
+.img5{
+  background-attachment: fixed;
+  background-image: url("./../../Images/img2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2rem;
+  width: calc(100vw - 20%);
+  height: 70vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.div6_1{
+  padding-top: 12rem;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  padding-left: 6rem
+}
+
+.div6_2{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 7rem;
+  padding-top: 1rem;
+}

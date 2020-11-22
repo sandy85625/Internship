@@ -1,0 +1,101 @@
+.navSpace {
+  width: 100vw;
+  height: 9rem;
+  background-color: grey;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.p {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: grey;
+}
+
+.games_2 {
+  background-color: grey;
+  width: 100vw;
+  padding: 7.5rem;
+}
+
+.gimg6 {
+  background-image: url('./../../Images/img6.png');
+  border-radius: 1rem;
+  height: calc(100vh - 9rem);
+  background-size: contain;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  box-sizing: border-box;
+  background-repeat: none;
+  width: calc(100vw - 15rem);
+  margin-bottom: 7rem;
+}
+
+.gimg7 {
+  background-image: url('./../../Images/img7.png');
+  border-radius: 1rem;
+  height: calc(100vh - 10rem);
+  padding-top: 10rem;
+  padding-left: 5rem;
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: none;
+  width: calc(100vw - 15rem);
+  margin-bottom: 7rem;
+}
+
+.gimg8 {
+  background-image: url('./../../Images/img8.png');
+  border-radius: 1rem;
+  height: calc(100vh - 10rem);
+  padding-top: 10rem;
+  padding-left: 5rem;
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: none;
+  width: calc(100vw - 15rem);
+  margin-bottom: 7rem;
+}
+
+.gimg9 {
+  background-image: url('./../../Images/img9.png');
+  border-radius: 1rem;
+  height: calc(100vh - 10rem);
+  padding-top: 10rem;
+  padding-left: 5rem;
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: none;
+  width: calc(100vw - 15rem);
+  /* margin-bottom: 5rem; */
+}
+
+img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 2rem;
+  border: solid white 0.3rem;
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+
+.img {
+  background-color: rgba(8, 8, 8, 0.582);
+  border-radius: 2rem;
+  width: 40rem;
+  height: 20rem;
+}
+
+img:hover{
+    width: 9rem;
+  height: 9rem;
+}
