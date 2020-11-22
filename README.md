@@ -14,10 +14,6 @@ And I have used the League of Legends Trailer clip as the background Video The 
 
 # Peek into File system
 
-.docz
-
-Contains scripts related to static Gatsby Documentation Websites. Open [https://www.docz.site/docs/getting-started](https://www.docz.site/docs/getting-started) to run it
-
 public
 
 Contains index.html file and the template.css (Edit this for changing website styles)
