@@ -10,3 +10,9 @@ Know more about Collaborative use of Github: https://docs.github.com/en/free-pro
 Visit our website: https://zstream.in | Contact us at contact@zstream.in
 
 All rights reserved | Evoura Technologies Pvt Ltd | 2020
+
+
+# To run the server:-
+  cd zstream_clone
+  npm install
+  npm start
