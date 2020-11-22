@@ -55,3 +55,51 @@
       font-size: 30px;
     }
   }
+  #button .btn-get-started {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #0a0a0a;
+  }
+  #button .btn-get-started:hover {
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+  }
+  .section{
+    background-color: rgb(206, 203, 209);
+    height: 450px;
+    text-align: center;
+    padding: 20%;
+  }
+  #border {
+    
+    
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: px
+  
+  
+  }
+  .about{
+    height: 450px;
+    background-color: ;
+   
+
+  }
+  
+  .last-section{
+    height: 500px;
+    background-color: blueviolet;
+
+  }
+  
