@@ -13,9 +13,9 @@ Tools used :
 And I have used the League of Legends Trailer clip as the background Video The clone is definitely the byproduct of my zeal towards minimalism and at the same time obeys notions of criteria given.
 # How it Looks!
 
-![](https://github.com/AmalChandru/Internship/blob/AmalChandru-patch-1/Extra/Gif1.mp4)
+![](https://github.com/AmalChandru/Internship/blob/AmalChandru-patch-1/Extra/1.gif)
 
-![](Extra/Gif2.gif)
+![](https://github.com/AmalChandru/Internship/blob/AmalChandru-patch-1/Extra/2.gif)
 
 
 
