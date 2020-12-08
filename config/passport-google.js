@@ -19,7 +19,7 @@ passport.use(new GoogleStrategy({
             if (error) {
                 console.error("ERROR: Passport- Google ", error);
             }
-            // console.log(profile);
+            console.log(profile);
 
             if (user) {
                 return done(null, user);

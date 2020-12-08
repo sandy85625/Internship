@@ -22,14 +22,6 @@ router.get('/signout', authControllers.logout)
 //--------- Reset Password -------//
 router.post('/reset/:id', authControllers.resetPassword)
 
-// ------- facebook Authentication -------//
-router.get('/facebook', passport.authenticate('facebook', {
-        scope: ['email']
-}));
-
-router.get('/facebook/callback', passport.authenticate('facebook', {
-        failureRedirect: '/login'
-}), authControllers.login);
 
 
 // -------- Google Authentication ---------//

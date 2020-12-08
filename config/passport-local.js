@@ -1,6 +1,7 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/User');
+const bcrypt = require("bcrypt")
 
 //------- Confrigation of Passport -----//
 passport.use(new LocalStrategy({
@@ -14,6 +15,7 @@ passport.use(new LocalStrategy({
     }, function (err, user) {
 
       if (err) {
+        console.log("error finding in user --> passport");
         return done(err);
       }
       if (!user) {
@@ -22,12 +24,16 @@ passport.use(new LocalStrategy({
           message: 'Incorrect username.'
         });
       }
-      if (user.password != password) {
-        console.log("ERROR: Passport 02");
-        return done(null, false, {
-          message: 'Incorrect password.'
-        });
-      }
+
+      bcrypt.compare(password, user.password, function (error, result) {
+        if (!result) {
+          console.log("Invalid username password");
+          return done(null, false);
+        }else{
+          return done(null, user);
+        }
+      })
+
       return done(null, user);
     });
   }
@@ -47,6 +53,17 @@ passport.deserializeUser(function (id, done) {
     return done(null, user);
   });
 });
+
+passport.checkSessionPresent = function (request, response, next) {
+  // if user is signed in then don't go to sign in/up page
+  if (request.isAuthenticated()) {
+      return response.redirect("/");
+  }
+  else {
+      // if user is not then go
+      return next();
+  }
+}
 
 
 //-------- Checking Authentication --------//

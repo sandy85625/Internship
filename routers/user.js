@@ -4,7 +4,7 @@ const routers = express.Router();
 const passport = require('passport');
 
 // view for home page
-routers.get('/', function (req, res) {
+routers.get('/', passport.checkSessionPresent ,function (req, res) {
     return res.render('home.ejs');
 })
 
