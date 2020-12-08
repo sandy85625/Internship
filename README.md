@@ -2,8 +2,10 @@
 Template for Backend Web Development
 
 
-Task will appear here before 9:30 AM on 04 December 2020.
+Task: To implement a backend for useraccounts in a website. Target 3 users.
 ---
+
+End time: 5 PM, 08 December
 
 ### Fork this repository to your profile. After finishing the work, commit the code to your branch in your profile and then create a pull request to the main branch of this repository.
 
