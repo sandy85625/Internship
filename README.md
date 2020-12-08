@@ -43,8 +43,9 @@
 
 `npm install`
 
-#### Configration og credentials
->Make a file name key.js and put the following credentials <br>
+#### Configration of credentials
+Make a file name key.js and put the following credentials <br>
+```
     module.exports = {
         // for Application
        MONGO: '-',           //mongoDB connection url
@@ -68,7 +69,7 @@
         GOOGLE_CLIENT_SECRET: '-',      //google clint Secret key
         GOOGLE_CALLBACK_URL: 'http://localhost:5429/auth/google/callback'
     }
-
+```
 ##### Then simply start your app
 
 `npm start`
